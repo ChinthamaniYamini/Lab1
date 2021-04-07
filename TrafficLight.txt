@@ -1,0 +1,26 @@
+package day2.task2;
+
+import java.util.Scanner;
+
+public class TrafficLight {
+
+	public static void main(String[] args) {
+		System.out.println("Enter a color");
+		String s,s1,s2,s3;
+		Scanner sc= new Scanner(System.in);
+		s=sc.next();
+		switch(s) {
+		case "red":
+			System.out.println("Stop");
+			break;
+		case "green":
+			System.out.println("Go");
+			break;
+		case "yellow":
+			System.out.println("Ready");
+			break;
+		}
+		
+	}
+
+}

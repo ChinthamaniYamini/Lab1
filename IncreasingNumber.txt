@@ -1,0 +1,44 @@
+package day2.task2;
+
+import java.util.Scanner;
+
+public class IncreasingNumber {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		IncreasingNumber obj= new IncreasingNumber();
+		
+		int n;
+		Scanner sc= new Scanner(System.in);
+		n=sc.nextInt();
+		if(obj.checkNumber(n))
+		System.out.println("is");
+		else
+			System.out.println(" not is");;
+			
+
+
+	}
+	
+	
+	public boolean checkNumber(int n) {
+		int r,q;
+		r=n%10;
+		n=n/10;
+		if(n==0)
+			return true;
+		while(n!=0) {
+			q=n%10;
+			if(q>r)
+				return false;
+			r=n%10;
+			q=r;
+			n=n/10;
+					
+		}
+		return true;
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package day2.task2;
+
+import java.util.Scanner;
+
+public class PowerOfTwo {
+
+	public static void main(String[] args) {
+		PowerOfTwo obj=new PowerOfTwo();
+		int n;
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		if(obj.checkNumber(n))
+			System.out.println("is");
+		else
+			System.out.println(" not is");
+			
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	public boolean checkNumber(int n) {
+		if(n%2==0)
+			return true;
+		else 
+			return false;
+	}
+
+}
